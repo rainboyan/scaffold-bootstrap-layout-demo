@@ -6,6 +6,7 @@
 - Grails Base Profile **5.0.5-SNAPSHOT**
 - Grails Web Profile **5.0.4-SNAPSHOT**
 - Grails Scaffolding Plugin **4.0.1-SNAPSHOT**
+- Grails Fields Plugin **3.0.0.RC1**
 
 ## Demo
 
@@ -17,3 +18,24 @@
 
 ![Edit a Post](/screenshot/grails-5-1-2-scaffold-demo-edit.png)
 
+## Todo
+
+- [x] Current use Bootstrap 4.6.1 and jQuery 3.5.1, Popper 1.16.1
+- [ ] Update fields plugin default templates, use bootstrap theme
+- [ ] Use Bootstrap Icons replace of Grails old skins and images
+- [ ] Remove unused Grails styles
+- [ ] Integrated Bootswatch themes
+- [ ] User language switch
+- [ ] Upgrade to Bootstrap 5.1.x
+- [ ] Support Tailwind CSS
+
+## Links
+
+- [Grails](https://grails.org)
+- [Grails Github](https://github.com/grails)
+- [Grails Fiedls Plugin](https://grails-fields-plugin.github.io/grails-fields/)
+- [Bootstrap](https://getbootstrap.com)
+- [Bootswatch](https://bootswatch.com)
+- [jQuery](https://jquery.com)
+- [Popper](https://popper.js.org)
+- [Tailwind CSS](https://tailwindcss.com)
