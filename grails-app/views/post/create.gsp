@@ -10,10 +10,18 @@
         <div class="container">
             <section class="row">
                 <a href="#create-post" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-                <div class="nav" role="navigation">
-                    <ul>
-                        <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-                        <li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
+                <div class="col-12" role="navigation">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="${createLink(uri: '/')}">
+                                <i class="bi bi-house-fill"></i><g:message code="default.home.label"/>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <g:link class="" action="index">
+                                <i class="bi bi-journals"></i><g:message code="default.list.label" args="[entityName]" />
+                            </g:link>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -34,8 +42,11 @@
                         <fieldset class="form">
                             <f:all bean="post"/>
                         </fieldset>
-                        <fieldset class="buttons">
-                            <g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
+                        <fieldset class="buttons offset-md-3">
+                            <button name="create" class="btn btn-primary">
+                                <i class="bi bi-journal-plus"></i>
+                                <g:message code="default.button.create.label" default="Create" />
+                            </button>
                         </fieldset>
                     </g:form>
                 </div>

@@ -10,10 +10,18 @@
         <div class="container">
             <section class="row">
                 <a href="#list-post" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-                <div class="nav" role="navigation">
-                    <ul>
-                        <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-                        <li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
+                <div class="col-12" role="navigation">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="${createLink(uri: '/')}">
+                                <i class="bi bi-house-fill"></i><g:message code="default.home.label"/>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <g:link class="nav-link" action="create">
+                                <i class="bi bi-journal-plus"></i><g:message code="default.new.label" args="[entityName]" />
+                            </g:link>
+                        </li>
                     </ul>
                 </div>
             </section>

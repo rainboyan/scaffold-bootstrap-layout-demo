@@ -10,11 +10,23 @@
         <div class="container">
             <section class="row">
                 <a href="#show-post" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-                <div class="nav" role="navigation">
-                    <ul>
-                        <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-                        <li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
-                        <li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
+                <div class="col-12" role="navigation">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="${createLink(uri: '/')}">
+                                <i class="bi bi-house-fill"></i><g:message code="default.home.label"/>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <g:link class="" action="index">
+                                <i class="bi bi-journals"></i><g:message code="default.list.label" args="[entityName]" />
+                            </g:link>
+                        </li>
+                        <li class="nav-item">
+                            <g:link class="" action="create">
+                                <i class="bi bi-journal-plus"></i><g:message code="default.new.label" args="[entityName]" />
+                            </g:link>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -26,9 +38,13 @@
                     </g:if>
                     <f:display bean="post" />
                     <g:form resource="${this.post}" method="DELETE">
-                        <fieldset class="buttons">
-                            <g:link class="edit" action="edit" resource="${this.post}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
-                            <input class="delete" type="submit" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
+                        <fieldset class="buttons offset-md-3">
+                            <g:link class="btn btn-primary" action="edit" resource="${this.post}">
+                                <i class="bi bi-journal-text"></i><g:message code="default.button.edit.label" default="Edit" />
+                            </g:link>
+                            <button class="btn btn-danger" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');">
+                                <i class="bi bi-journal-x"></i><g:message code="default.button.delete.label" default="Delete" />
+                            </button>
                         </fieldset>
                     </g:form>
                 </div>
