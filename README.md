@@ -10,18 +10,18 @@
 
 ## Demo
 
-![Create a Post](/screenshot/grails-5-1-2-bootstrap-theme-create.png)
+![Create a Post](/screenshot/grails-5-1-2-fields-customizing-create.png)
 
-![Post List](/screenshot/grails-5-1-2-bootstrap-theme-list.png)
+![Post List](/screenshot/grails-5-1-2-fields-customizing-list.png)
 
-![Show Post](/screenshot/grails-5-1-2-bootstrap-theme-show.png)
+![Show Post](/screenshot/grails-5-1-2-fields-customizing-show.png)
 
-![Edit a Post](/screenshot/grails-5-1-2-bootstrap-theme-edit.png)
+![Edit a Post](/screenshot/grails-5-1-2-fields-customizing-edit.png)
 
 ## Todos
 
 - [x] Current use Bootstrap 4.6.1 and jQuery 3.5.1, Popper 1.16.1
-- [ ] Update fields plugin default templates, use bootstrap theme
+- [x] Update fields plugin default templates, use bootstrap theme
 - [x] Use Bootstrap Icons replace of Grails old skins and images
 - [ ] Remove unused Grails styles
 - [ ] Integrated Bootswatch themes
