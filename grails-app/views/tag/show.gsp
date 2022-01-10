@@ -2,14 +2,14 @@
 <html>
     <head>
         <meta name="layout" content="main" />
-        <g:set var="entityName" value="${message(code: 'post.label', default: 'Post')}" />
-        <title><g:message code="default.edit.label" args="[entityName]" /></title>
+        <g:set var="entityName" value="${message(code: 'tag.label', default: 'Tag')}" />
+        <title><g:message code="default.show.label" args="[entityName]" /></title>
     </head>
     <body>
     <div id="content" role="main">
         <div class="container">
             <section class="row">
-                <a href="#edit-post" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
+                <a href="#show-tag" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
                 <div class="col-12" role="navigation">
                     <ul class="nav nav-pills">
                         <li class="nav-item">
@@ -31,26 +31,19 @@
                 </div>
             </section>
             <section class="row">
-                <div id="edit-post" class="col-12 content scaffold-edit" role="main">
-                    <h1><g:message code="default.edit.label" args="[entityName]" /></h1>
+                <div id="show-tag" class="col-12 content scaffold-show" role="main">
+                    <h1><g:message code="default.show.label" args="[entityName]" /></h1>
                     <g:if test="${flash.message}">
-                    <div class="alert alert-success" role="status">${flash.message}</div>
+                    <div class="message" role="status">${flash.message}</div>
                     </g:if>
-                    <g:hasErrors bean="${this.post}">
-                    <ul class="errors" role="alert">
-                        <g:eachError bean="${this.post}" var="error">
-                        <li <g:if test="${error in org.springframework.validation.FieldError}">data-field-id="${error.field}"</g:if>><g:message error="${error}"/></li>
-                        </g:eachError>
-                    </ul>
-                    </g:hasErrors>
-                    <g:form resource="${this.post}" method="PUT">
-                        <g:hiddenField name="version" value="${this.post?.version}" />
-                        <fieldset class="form">
-                            <f:all bean="post"/>
-                        </fieldset>
+                    <f:display bean="tag" />
+                    <g:form resource="${this.tag}" method="DELETE">
                         <fieldset class="buttons offset-md-3">
-                            <button class="btn btn-primary">
-                                <i class="bi bi-journal-check"></i><g:message code="default.button.update.label" default="Update" />
+                            <g:link class="btn btn-primary" action="edit" resource="${this.tag}">
+                                <i class="bi bi-journal-text"></i><g:message code="default.button.edit.label" default="Edit" />
+                            </g:link>
+                            <button class="btn btn-danger" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');">
+                                <i class="bi bi-journal-x"></i><g:message code="default.button.delete.label" default="Delete" />
                             </button>
                         </fieldset>
                     </g:form>

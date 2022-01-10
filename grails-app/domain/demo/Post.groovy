@@ -9,6 +9,10 @@ class Post {
     Date publishedDate
     Boolean isPrivate = true
 
+    Category category
+
+    static hasMany = [tags : Tag]
+
     static constraints = {
         title(blank: false)
         body(blank: false, widget: 'textarea')

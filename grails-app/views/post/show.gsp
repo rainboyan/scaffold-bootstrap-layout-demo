@@ -36,7 +36,21 @@
                     <g:if test="${flash.message}">
                     <div class="alert alert-success" role="status">${flash.message}</div>
                     </g:if>
-                    <f:display bean="post" />
+                    <f:display bean="post" except="category, tags" />
+                    <div class="form-group row">
+                        <label for="tags" class="col-3 col-form-label property-label text-right"><g:message code="post.tags.label" default="Tags"/></label>
+                        <div class="col-9">
+                            <g:each var="tag" in="${post.tags}">
+                                <g:link controller="tag" action="show" id="${tag.id}">${tag.name}</g:link>
+                            </g:each>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="category" class="col-3 col-form-label property-label text-right"><g:message code="post.category.label" default="Category"/></label>
+                        <div class="col-9">
+                            <g:link controller="category" action="show" id="${post.category.id}">${post.category.name}</g:link>
+                        </div>
+                    </div>
                     <g:form resource="${this.post}" method="DELETE">
                         <fieldset class="buttons offset-md-3">
                             <g:link class="btn btn-primary" action="edit" resource="${this.post}">
