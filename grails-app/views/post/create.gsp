@@ -18,7 +18,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <g:link class="" action="index">
+                            <g:link class="nav-link" action="index">
                                 <i class="bi bi-journals"></i><g:message code="default.list.label" args="[entityName]" />
                             </g:link>
                         </li>
@@ -29,7 +29,7 @@
                 <div id="create-post" class="col-12 content scaffold-create" role="main">
                     <h1><g:message code="default.create.label" args="[entityName]" /></h1>
                     <g:if test="${flash.message}">
-                    <div class="message" role="status">${flash.message}</div>
+                    <div class="alert alert-success" role="status">${flash.message}</div>
                     </g:if>
                     <g:hasErrors bean="${this.post}">
                     <ul class="errors" role="alert">

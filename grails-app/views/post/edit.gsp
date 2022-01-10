@@ -18,12 +18,12 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <g:link class="" action="index">
+                            <g:link class="nav-link" action="index">
                                 <i class="bi bi-journals"></i><g:message code="default.list.label" args="[entityName]" />
                             </g:link>
                         </li>
                         <li class="nav-item">
-                            <g:link class="" action="create">
+                            <g:link class="nav-link" action="create">
                                 <i class="bi bi-journal-plus"></i><g:message code="default.new.label" args="[entityName]" />
                             </g:link>
                         </li>
