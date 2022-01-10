@@ -1,0 +1,1 @@
+<g:field type="number" name="${property}" value="${value}" class="col-1 form-control"/>
