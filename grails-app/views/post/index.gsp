@@ -31,7 +31,7 @@
                     <g:if test="${flash.message}">
                         <div class="message" role="status">${flash.message}</div>
                     </g:if>
-                    <f:table collection="${postList}" />
+                    <f:table collection="${postList}" maxProperties="10" />
 
                     <g:if test="${postCount > params.int('max')}">
                     <div class="pagination">

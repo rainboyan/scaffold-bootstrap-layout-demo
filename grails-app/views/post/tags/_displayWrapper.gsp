@@ -1,0 +1,1 @@
+${bean?.tags*.name.join(', ')}
