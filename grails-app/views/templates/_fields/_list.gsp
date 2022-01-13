@@ -3,7 +3,7 @@
         <div class="form-group row">
             <label for="${p.name}" class="col-3 col-form-label property-label text-right"><g:message code="${domainClass.decapitalizedName}.${p.name}.label" default="${p.defaultLabel}" /></label>
             <div class="col-9">
-                <input type="text" readonly class="form-control-plaintext property-value" name="${p.name}" aria-labelledby="${p.name}" value="${body(p)}">
+                <div class="property-value" aria-labelledby="${p.name}">${body(p)}</div>
             </div>
         </div>
     </g:each>
