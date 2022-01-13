@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <g:form resource="${this.post}" method="DELETE">
-                        <fieldset class="buttons offset-md-3">
+                        <fieldset class="buttons offset-3">
                             <g:link class="btn btn-primary" action="edit" resource="${this.post}">
                                 <i class="bi bi-journal-text"></i><g:message code="default.button.edit.label" default="Edit" />
                             </g:link>

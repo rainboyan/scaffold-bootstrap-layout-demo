@@ -48,7 +48,7 @@
                         <fieldset class="form">
                             <f:all bean="category"/>
                         </fieldset>
-                        <fieldset class="buttons offset-md-3">
+                        <fieldset class="buttons offset-3">
                             <button class="btn btn-primary">
                                 <i class="bi bi-journal-check"></i><g:message code="default.button.update.label" default="Update" />
                             </button>

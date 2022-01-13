@@ -38,7 +38,7 @@
                     </g:if>
                     <f:display bean="category" />
                     <g:form resource="${this.category}" method="DELETE">
-                        <fieldset class="buttons offset-md-3">
+                        <fieldset class="buttons offset-3">
                             <g:link class="btn btn-primary" action="edit" resource="${this.category}">
                                 <i class="bi bi-journal-text"></i><g:message code="default.button.edit.label" default="Edit" />
                             </g:link>

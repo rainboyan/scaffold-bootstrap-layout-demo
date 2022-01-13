@@ -42,7 +42,7 @@
                         <fieldset class="form">
                             <f:all bean="category"/>
                         </fieldset>
-                        <fieldset class="buttons offset-md-3">
+                        <fieldset class="buttons offset-3">
                             <button name="create" class="btn btn-primary">
                                 <i class="bi bi-journal-plus"></i>
                                 <g:message code="default.button.create.label" default="Create" />
