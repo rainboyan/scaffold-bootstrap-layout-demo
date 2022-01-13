@@ -10,22 +10,24 @@
 
 ## Demo
 
-![Create a Post](/screenshot/grails-5-1-2-fields-customizing-create.png)
+![Language Menu](/screenshot/grails-5-1-2-css-clean-and-views-improvement-languages-menu.png)
 
-![Post List](/screenshot/grails-5-1-2-fields-customizing-list.png)
+![Create a Post](/screenshot/grails-5-1-2-css-clean-and-views-improvement-create.png)
 
-![Show Post](/screenshot/grails-5-1-2-fields-customizing-show.png)
+![Post List](/screenshot/grails-5-1-2-css-clean-and-views-improvement-list.png)
 
-![Edit a Post](/screenshot/grails-5-1-2-fields-customizing-edit.png)
+![Show Post](/screenshot/grails-5-1-2-css-clean-and-views-improvement-show.png)
+
+![Edit a Post](/screenshot/grails-5-1-2-css-clean-and-views-improvement-edit.png)
 
 ## Todos
 
 - [x] Current use Bootstrap 4.6.1 and jQuery 3.5.1, Popper 1.16.1
 - [x] Update fields plugin default templates, use bootstrap theme
 - [x] Use Bootstrap Icons replace of Grails old skins and images
-- [ ] Remove unused Grails styles
+- [x] Remove unused Grails styles
 - [ ] Integrated Bootswatch themes
-- [ ] User language switch
+- [x] User language switch
 - [ ] Upgrade to Bootstrap 5.1.x
 - [ ] Support Tailwind CSS
 
