@@ -14,3 +14,17 @@
 *= require mobile
 *= require_self
 */
+
+.taglist {
+    display: inline-flex;
+    list-style-type: none;
+    margin-top: 5px;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    width: 20%;
+}
+
+.taglist li {
+    margin-right: .5rem;
+}
