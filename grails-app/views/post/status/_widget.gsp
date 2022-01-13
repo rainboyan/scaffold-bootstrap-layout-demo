@@ -1,0 +1,1 @@
+<g:select name="${property}" from="${type.values()}" value="${value}" valueMessagePrefix="post.status" class="col-2 form-control"/>
