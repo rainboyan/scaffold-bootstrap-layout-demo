@@ -1,6 +1,6 @@
 ---
 grails:
-    profile: web
+    profile: org.grails.profiles:web-bootstrap:5.0.0-SNAPSHOT
     codegen:
         defaultPackage: org.grails.demo
     gorm:

@@ -14,7 +14,7 @@
 
 <div id="content" role="main">
     <div class="container">
-        <section class="row colset-2-its">
+        <section class="row">
             <h1>Welcome to Grails</h1>
 
             <p>

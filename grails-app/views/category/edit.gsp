@@ -31,10 +31,10 @@
                 </div>
             </section>
             <section class="row">
-                <div id="edit-category" class="col-12 content scaffold-edit" role="main">
+                <div id="edit-category" class="col-12 scaffold scaffold-edit" role="main">
                     <h1><g:message code="default.edit.label" args="[entityName]" /></h1>
                     <g:if test="${flash.message}">
-                    <div class="message" role="status">${flash.message}</div>
+                    <div class="alert alert-success" role="status">${flash.message}</div>
                     </g:if>
                     <g:hasErrors bean="${this.category}">
                     <ul class="errors" role="alert">

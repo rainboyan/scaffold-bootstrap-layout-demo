@@ -26,7 +26,7 @@
                 </div>
             </section>
             <section class="row">
-                <div id="list-attachment" class="col-12 content scaffold-list" role="main">
+                <div id="list-attachment" class="col-12 scaffold scaffold-list" role="main">
                     <h1><g:message code="default.list.label" args="[entityName]" /></h1>
                     <g:if test="${flash.message}">
                         <div class="alert alert-success" role="status">${flash.message}</div>
@@ -34,9 +34,11 @@
                     <f:table collection="${attachmentList}" />
 
                     <g:if test="${attachmentCount > params.int('max')}">
-                    <div class="pagination">
-                        <g:paginate total="${attachmentCount ?: 0}" />
-                    </div>
+                    <nav aria-label="Page navigation">
+                        <ui class="pagination">
+                            <bs:paginate total="${attachmentCount ?: 0}" />
+                        </ui>
+                    </nav>
                     </g:if>
                 </div>
             </section>

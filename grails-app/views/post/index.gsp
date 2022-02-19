@@ -26,17 +26,19 @@
                 </div>
             </section>
             <section class="row">
-                <div id="list-post" class="col-12 content scaffold-list" role="main">
+                <div id="list-post" class="col-12 scaffold scaffold-list" role="main">
                     <h1><g:message code="default.list.label" args="[entityName]" /></h1>
                     <g:if test="${flash.message}">
-                        <div class="message" role="status">${flash.message}</div>
+                        <div class="alert alert-success" role="status">${flash.message}</div>
                     </g:if>
-                    <f:table collection="${postList}" maxProperties="10" />
+                    <f:table collection="${postList}" />
 
                     <g:if test="${postCount > params.int('max')}">
-                    <div class="pagination">
-                        <g:paginate total="${postCount ?: 0}" />
-                    </div>
+                    <nav aria-label="Page navigation">
+                        <ui class="pagination">
+                            <bs:paginate total="${postCount ?: 0}" />
+                        </ui>
+                    </nav>
                     </g:if>
                 </div>
             </section>

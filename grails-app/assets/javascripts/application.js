@@ -10,6 +10,7 @@
 //= require bootstrap
 //= require bs-custom-file-input.min
 //= require_self
+
 $(document).ready(function() {
     bsCustomFileInput.init();
 });

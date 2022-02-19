@@ -26,10 +26,10 @@
                 </div>
             </section>
             <section class="row">
-                <div id="create-tag" class="col-12 content scaffold-create" role="main">
+                <div id="create-tag" class="col-12 scaffold scaffold-create" role="main">
                     <h1><g:message code="default.create.label" args="[entityName]" /></h1>
                     <g:if test="${flash.message}">
-                    <div class="message" role="status">${flash.message}</div>
+                    <div class="alert alert-success" role="status">${flash.message}</div>
                     </g:if>
                     <g:hasErrors bean="${this.tag}">
                     <ul class="errors" role="alert">

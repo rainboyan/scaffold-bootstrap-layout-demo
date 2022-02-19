@@ -26,17 +26,19 @@
                 </div>
             </section>
             <section class="row">
-                <div id="list-category" class="col-12 content scaffold-list" role="main">
+                <div id="list-category" class="col-12 scaffold scaffold-list" role="main">
                     <h1><g:message code="default.list.label" args="[entityName]" /></h1>
                     <g:if test="${flash.message}">
-                        <div class="message" role="status">${flash.message}</div>
+                        <div class="alert alert-success" role="status">${flash.message}</div>
                     </g:if>
                     <f:table collection="${categoryList}" />
 
                     <g:if test="${categoryCount > params.int('max')}">
-                    <div class="pagination">
-                        <g:paginate total="${categoryCount ?: 0}" />
-                    </div>
+                    <nav aria-label="Page navigation">
+                        <ui class="pagination">
+                            <bs:paginate total="${categoryCount ?: 0}" />
+                        </ui>
+                    </nav>
                     </g:if>
                 </div>
             </section>
